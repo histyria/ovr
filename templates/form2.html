@@ -1,0 +1,21 @@
+{% extends 'base2.html' %}
+{% block title %}Form Example 2 - Custom Fields Placement {% endblock %}
+{% load crispy_forms_tags %}
+
+ 
+{% block content %}
+<div class="container p-3 my-3 border">   
+  <h2>Form Example 2 - Custom Fields Placement</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form|crispy }} 
+    
+    <div class="container p-3 my-3 bg-dark text-white"><button type="submit" class="btn btn-primary">Sign in</button></div>
+  </form>
+
+</div>
+
+
+
+<div class="container p-3 my-3 bg-primary text-white">sssssss</div>
+{% endblock %}
